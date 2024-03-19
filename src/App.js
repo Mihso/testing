@@ -1,7 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Item from './item/item';
+import { useState } from 'react';
 
 function App() {
+
+  const [items, updateItems]= useState([
+  ["pizz","pie"], 
+  ["pasta","sauce"]
+]);
+  console.log(items);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +26,16 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={()=>updateItems([...items,["hello","world"]])} >Add Item</button>
+        {
+            items.map((data, idx) => (
+                <div key={idx}>
+                <Item>{data[0]}{data[1]}</Item>
+                {idx}
+                </div>
+              )
+            )
+        }
       </header>
     </div>
   );
