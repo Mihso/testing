@@ -7,7 +7,6 @@ const Item = props => {
 
     const [counter, updateCounter] = useState(0);
 
-    console.log(props);
   return (
     <div className="item">
         <div>{name}</div>
