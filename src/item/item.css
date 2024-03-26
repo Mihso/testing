@@ -1,6 +1,7 @@
 .item {
     text-align: center;
     width: fit-content;
+    min-width: 100px;
     margin:auto;
     align-self: center;
     background-color: transparent;
@@ -9,6 +10,5 @@
     border-width: 5px;
     border-style: solid;
     border-color: aliceblue;
-    margin-bottom: 5px;
     margin-top: 5px;
   }

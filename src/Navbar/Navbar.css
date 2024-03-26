@@ -1,0 +1,26 @@
+.NavStyle{
+    padding: 10px;
+    background: rgb(71, 71, 71);
+    min-height: 40px;
+    padding: 10px;
+    align-content: center;
+    }
+    
+.NavLi {
+        font-size: 20px;
+        display: inline;
+        border-style: none;
+        background-color: rgb(39, 39, 39);
+        color:white;
+        border-width: 5px;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 5px;
+        border-style: outset;
+    }
+
+.NavLi:hover{
+    background-color: rgb(194, 194, 194);
+    border-style:inset;
+}
+    

@@ -1,0 +1,11 @@
+.sidebar{
+    position: absolute;
+    float: left;
+    margin:auto;
+    border-style: solid;
+    border-color: black;
+    background-color: grey;
+    width: fit-content;
+    padding: 10px;
+    min-width: 100px;
+}

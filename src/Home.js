@@ -26,15 +26,16 @@ function Home() {
           Learn React
         </a>
         <button onClick={()=>updateItems([...items,["hello","world"]])} >Add Item</button>
+        <div className="listStart">
         {
             items.map((data, idx) => (
-                <div key={idx}>
+                <div className="lister" key={idx}>
                 <Item>{data[0]}{data[1]}</Item>
-                {idx}
                 </div>
               )
             )
         }
+        </div>
       </header>
     </div>
   );

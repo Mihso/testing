@@ -2,7 +2,7 @@ import './App.css';
 import Home from './Home';
 import Other from './other';
 import {Routes ,Route, NavLink } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from './Navbar/Navbar';
 
 function App() {
 
