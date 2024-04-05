@@ -9,6 +9,8 @@ function Home() {
         ["pizz","pie"], 
         ["pasta","sauce"]
       ]);
+    const [title, updateTitle] = useState();
+    const [description, updateDescription] = useState();
 
   return (
     <div className="App">
@@ -25,7 +27,13 @@ function Home() {
         >
           Learn React
         </a>
-        <button onClick={()=>updateItems([...items,["hello","world"]])} >Add Item</button>
+        <form className='form'>
+          <label>Name: </label>
+          <input type="text" value={title} onChange={e=> updateTitle(e.target.value)} name="name"></input>
+          <label>Description: </label>
+          <input type="text" value={description} onChange={e=> updateDescription(e.target.value)} name="description"></input>
+        </form>
+        <button  onClick={()=>updateItems([...items,[title,description]])} >Add Item</button>
         <div className="listStart">
         {
             items.map((data, idx) => (
