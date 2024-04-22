@@ -37,7 +37,19 @@
   }
 }
 
+.otherI{
+  border-style: solid;
+  border-color: aliceblue;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+}
+
 .other{
+  border-style: solid;
+  border-color: aliceblue;
+  padding: 15px;
+  font-size: 30px;
   align-content: center;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
