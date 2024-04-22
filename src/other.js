@@ -1,21 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
-import Item from './item/item';
 import { useState } from 'react';
 
 function Other() {
 
     const [location, updatelocation]= useState([5,5]);
     const [pressed, updatePressed] = useState("");
+    const [marks, updateMarks] = useState([[Math.floor(Math.random(0)*10),Math.floor(Math.random(0)*10)],[Math.floor(Math.random(0)*10),Math.floor(Math.random(0)*10)]]);
 
     const grid = [];
 
     for(let i = 0; i < 10; i++){
       grid.push([" "," "," "," "," "," "," "," "," "," "]);
     }
+    // let d = 0;
+    // while(d < 2){
+    //   let x = Math.floor(Math.random(0)*10);
+    //   let y = Math.floor(Math.random(0)*10);
 
-    grid[location[0]][location[1]] = 'x';
-  
+    //   if(x !== location[0] || y !== location[1]){
+    //     updateMarks([...marks, [x, y]]);
+    //     d += 1;
+    //   }
+    // }
+
+    for(const mark of marks){
+      grid[mark[0]][mark[1]] = "E";
+    }
+
+    grid[location[0]][location[1]] = 'X';
 
   function onPress(press){
     updatePressed(press.key);
