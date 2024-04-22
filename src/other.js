@@ -5,25 +5,43 @@ import { useState } from 'react';
 
 function Other() {
 
-    const [items, updateItems]= useState([
-        ["pizz","pie"], 
-        ["pasta","sauce"]
-      ]);
+    const [location, updatelocation]= useState([5,5]);
+
+    const grid = [];
+
+    for(let i = 0; i < 10; i++){
+      grid.push([0,0,0,0,0,0,0,0,0,0]);
+    }
+
+    grid[location[0]][location[1]] = 1;
+  
+  function createRow(row){
+    
+    return(
+      row.map((value, idx) => (
+
+        <div key={idx}>
+          {value}
+        </div>
+
+      )
+    )
+  );
+  }
 
   return (
     <div className="App">
     <header className="App-header">
-          Learn React
-        <button onClick={()=>updateItems([...items,["hello","world"]])} >Add Item</button>
+      <div className='other'>
         {
-            items.map((data, idx) => (
+            grid.map((data, idx) => (
                 <div key={idx}>
-                <Item>{data[0]}{data[1]}</Item>
-                {idx}
+                  {createRow(data)}
                 </div>
               )
             )
         }
+        </div>
       </header>
     </div>
   );

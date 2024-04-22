@@ -37,10 +37,16 @@
   }
 }
 
+.other{
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
 .listStart{
   align-content: center;
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows:auto;
   width: 60%;
 }

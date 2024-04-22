@@ -16,20 +16,17 @@ function Home() {
     <div className="App">
     <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
         </a>
         <form className='form'>
           <label>Name: </label>
           <input type="text" value={title} onChange={e=> updateTitle(e.target.value)} name="name"></input>
+          <div> </div>
           <label>Description: </label>
           <input type="text" value={description} onChange={e=> updateDescription(e.target.value)} name="description"></input>
         </form>
