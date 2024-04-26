@@ -23,7 +23,7 @@ const NavL={
 const Navbar = () =>{
     return(
         <nav className="NavStyle">
-                <NavLink className="NavLi" to="/">Home</NavLink>
+                <NavLink className="NavLi" to="/testing">Home</NavLink>
                 <NavLink className="NavLi" to="/other">Other</NavLink>
         </nav>
     );
