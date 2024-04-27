@@ -1,0 +1,43 @@
+table {
+    border-color: black; 
+    border-width:10px;
+    border-style: solid;
+    padding: 5px;
+    border-collapse: collapse;
+    width: 80%;
+    margin:auto;
+}
+thead{
+    font-size: 20px; 
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    border-collapse: collapse;
+}
+tbody{
+    font-size: 18px; 
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+.App{
+    text-align: center;
+    align-content: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+td{
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 6px;
+}
