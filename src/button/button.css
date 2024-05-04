@@ -1,0 +1,16 @@
+.NavLi {
+    font-size: 20px;
+    border-style: none;
+    background-color: rgb(39, 39, 39);
+    color:white;
+    border-width: 8px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: outset;
+    width: fit-content;
+}
+
+.NavLi:hover{
+background-color: rgb(194, 194, 194);
+border-style:inset;
+}

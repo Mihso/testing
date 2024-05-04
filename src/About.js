@@ -1,17 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Item from './item/item';
 import { useState } from 'react';
 
 function About() {
 
-    const [items, updateItems]= useState([
-        ["pizz","pie"], 
-        ["pasta","sauce"]
-      ]);
     const [title, updateTitle] = useState();
     const [description, updateDescription] = useState();
     const [url, updateData] = useState();
+    const [link, updateLink] = useState();
 
     async function getData() {
         const api = "https://api.github.com/users/Mihso";
@@ -20,6 +15,7 @@ function About() {
         console.log(data);
         updateData(data.avatar_url);
         updateDescription(data.bio);
+        updateLink(data.html_url);
     }
     
     getData();
@@ -27,7 +23,7 @@ function About() {
   return (
     <div className="App">
     <header className="App-header">
-        <img src={url} className="App-logo" alt="logo" />
+        <img src={url} className="profile-pict" alt="logo" />
         <a
           className="App-link"
           href={url}
@@ -38,8 +34,13 @@ function About() {
         <div>
             About: 
         </div>
-        <div>
+        <div className='about'>
         {description}
+        </div>
+
+        Link to Github.
+        <div style={{'margin-top': '20px'}}>
+          {link}
         </div>
       </header>
     </div>

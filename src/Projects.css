@@ -13,6 +13,7 @@ thead{
     border-width: 5px;
     border-style: solid;
     border-collapse: collapse;
+    padding: 5px;
 }
 tbody{
     font-size: 18px; 
@@ -40,4 +41,7 @@ td{
     border-style: solid;
     border-collapse: collapse;
     padding: 6px;
+}
+th{
+    padding: 5px;
 }
