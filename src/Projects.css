@@ -1,11 +1,13 @@
 table {
-    border-color: black; 
+    border-color: rgb(166, 166, 166);
     border-width:10px;
     border-style: solid;
     padding: 5px;
     border-collapse: collapse;
     width: 80%;
     margin:auto;
+
+    border-radius: 10px;
 }
 thead{
     font-size: 20px; 
@@ -17,7 +19,7 @@ thead{
 }
 tbody{
     font-size: 18px; 
-    border-color: black;
+    border-color: rgb(166, 166, 166);
     border-width: 5px;
     border-style: solid;
     border-collapse: collapse;
@@ -36,7 +38,7 @@ tbody{
     color: white;
 }
 td{
-    border-color: black;
+    border-color: rgb(166, 166, 166);
     border-width: 5px;
     border-style: solid;
     border-collapse: collapse;

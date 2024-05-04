@@ -38,6 +38,12 @@ function About() {
         {description}
         </div>
 
+        Contact Information:
+        <div style={{'marginBottom':'20px'}}>
+          510-604-4520
+          moshimo90696@gmail.com
+        </div>
+
         Link to Github.
         <div style={{'margin-top': '20px'}}>
           {link}
