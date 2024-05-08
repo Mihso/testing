@@ -1,13 +1,26 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import NPC from './npc/npc';
 
 function Other() {
 
     const [location, updatelocation]= useState([5,5]);
-    const [pressed, updatePressed] = useState("");
-    const [marks, updateMarks] = useState([[Math.floor(Math.random(0)*10),Math.floor(Math.random(0)*10)],[Math.floor(Math.random(0)*10),Math.floor(Math.random(0)*10)]]);
+    const [pressed, updatePressed] = useState("-");
+    let char1 = new NPC(9);
+    let char2 = new NPC(9);
+    const [marks, updateMarks] = useState([char1, char2]);
+
+    const [text, updateText] = useState("");
 
     const grid = [];
+
+
+    useEffect(() => {
+      let interval = setInterval(() => {
+        updateMarks([char1, char2]);
+
+      }, 6000);
+    },[]);
 
     for(let i = 0; i < 10; i++){
       grid.push([" "," "," "," "," "," "," "," "," "," "]);
@@ -24,7 +37,7 @@ function Other() {
     // }
 
     for(const mark of marks){
-      grid[mark[0]][mark[1]] = "E";
+      grid[mark.location[0]][mark.location[1]] = "E";
     }
 
     grid[location[0]][location[1]] = 'X';
@@ -66,6 +79,21 @@ function Other() {
       }
     }
 
+    intersect();
+
+  }
+
+  function intersect(){
+    let encounter = false;
+    for(const mark of marks){
+      if(mark.location[0] == location[0] && mark.location[1]== location[1]){
+        updateText("You encountered an obstacle!");
+        encounter = true;
+      }
+    }
+    if(!encounter){
+      updateText("-");
+    }
   }
 
   function createRow(row){
@@ -95,6 +123,9 @@ function Other() {
               )
             )
         }
+        </div>
+        <div>
+          {text}
         </div>
       </header>
     </div>
