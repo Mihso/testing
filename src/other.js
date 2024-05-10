@@ -15,12 +15,12 @@ function Other() {
     const grid = [];
 
 
-    useEffect(() => {
-      let interval = setInterval(() => {
-        updateMarks([char1, char2]);
+    // useEffect(() => {
+    //   let interval = setInterval(() => {
+    //     updateMarks([char1, char2]);
 
-      }, 6000);
-    },[]);
+    //   }, 6000);
+    // },[]);
 
     for(let i = 0; i < 10; i++){
       grid.push([" "," "," "," "," "," "," "," "," "," "]);

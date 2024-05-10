@@ -3,12 +3,12 @@ import { useState, useEffect } from "react";
 function NPC(size){
 
 
-    useEffect(() => {
-        let interval = setInterval(() => {
-            movement();
-        }, 6000);
+    // useEffect(() => {
+    //     let interval = setInterval(() => {
+    //         movement();
+    //     }, 6000);
 
-      },[]);
+    //   },[]);
 
     const [location, updateLocation] = useState([Math.floor(Math.random(0)*10),Math.floor(Math.random(0)*10)])
 
