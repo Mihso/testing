@@ -12,9 +12,9 @@ function App() {
     <div>
     <Navbar />
     <div style={{'borderStyle':'inset', 'borderColor':'black', 'borderWidth': '15px'}}>
-      <div style={{'borderStyle':'solid', 'borderColor':'#58350071', 'borderWidth': '10px'}}>
+      <div style={{'borderStyle':'solid', 'borderColor':'#58350071','backgroundColor':'#623b0071', 'borderWidth': '10px'}}>
       <div style={{'borderStyle':'inset', 'borderColor':'black', 'borderWidth': '10px'}}>
-      <div style={{'borderStyle':'solid', 'borderColor':'#58350071', 'borderWidth': '10px'}}>
+      <div style={{'borderStyle':'solid', 'borderColor':'#623b0071','backgroundColor': '#623b0071' , 'borderWidth': '10px'}}>
       <div style={{'borderStyle':'inset', 'borderColor':'black', 'borderWidth': '10px'}}>
     <Routes>
       <Route path='/testing' Component={Home} />

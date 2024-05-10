@@ -34,7 +34,7 @@ function About() {
         <div>
             About: 
         </div>
-        <div className='about'>
+        <div className='about' style={{'margin': "10px"}}>
         {description}
         </div>
 

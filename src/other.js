@@ -112,7 +112,7 @@ function Other() {
 
   return (
     <div className="App">
-    <header className="App-header">
+    <header className="App-header" style={{"padding":"10px"}}>
     <input onKeyDown={e=>(onPress(e))}></input>
       <div className='other'>
         {
