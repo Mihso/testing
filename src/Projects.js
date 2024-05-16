@@ -33,6 +33,7 @@ function Projects() {
             <th>Description</th>
             <th>Tech Stacks</th>
             <th>Link</th>
+            <th>Deployed link</th>
         </tr>
         </thead>
         <tbody>
@@ -47,6 +48,7 @@ function Projects() {
                 <td>A Music guessing game pulling tracks from Spotify.</td>
                 <td>Angular, TypeScript,CSS, JPA, Postman, Springboot, Git, Eclipse, Maven</td>
                 <td><a href="https://github.com/Mihso/angular-whos-who-jan-2024-team-4">Whos's Who</a></td>
+                <td><a href="https://mihso.github.io/angular-whos-who-jan-2024-team-4/">Whos's Who deployed</a></td>
             </tr>
             <tr>
                 <td>Social Media</td>
