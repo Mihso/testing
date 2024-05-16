@@ -18,7 +18,7 @@ function App() {
       <div style={{'borderStyle':'solid', 'borderColor':'#623b0071','backgroundColor': '#623b0071' , 'borderWidth': '15px'}}>
       <div style={{'borderStyle':'inset', 'borderColor':'black', 'borderWidth': '15px'}}>
     <Routes>
-      <Route path='/testing' Component={Home} />
+      <Route path='/portfolio' Component={Home} />
       <Route path='/other' Component={Other} />
       <Route path='/about' Component={About}/>
       <Route path='/projects' Component={Projects} />
