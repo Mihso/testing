@@ -11,7 +11,7 @@ table {
 }
 thead{
     font-size: 20px; 
-    border-color: black;
+    border-color: rgb(166, 166, 166);;
     border-width: 5px;
     border-style: solid;
     border-collapse: collapse;
