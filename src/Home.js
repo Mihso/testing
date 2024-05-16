@@ -18,7 +18,7 @@ function Home() {
       <div style={{'fontSize':"60px"}}>
         MATTHEW OSHIMO PORTFOLIO
       </div>
-        <form className='form'>
+        {/* <form className='form'>
           <label>Name: </label>
           <input type="text" value={title} onChange={e=> updateTitle(e.target.value)} name="name"></input>
           <div> </div>
@@ -35,7 +35,7 @@ function Home() {
               )
             )
         }
-        </div>
+        </div> */}
       </header>
     </div>
   );

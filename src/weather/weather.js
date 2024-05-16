@@ -27,36 +27,22 @@ function Weather() {
     getData();
 
   return (
-    <div className="App">
-    <header className="App-header">
+    <div className="Weather">
+    <header className='Weather-header'>
         <div>
             {title} 
-        </div>
-        <div className='about' style={{'margin': "10px"}}>
-        {description}
         </div>
 
         <div className="gridder">
         {
             periods.map((data, idx) => (
                 <div className="entry" key={idx}>
-                <div>{data.name}</div>
+                <div style={{'marginBottom' : '15px'}}>{data.name}</div>
                 <div>{data.detailedForecast}</div>
                 </div>
               )
             )
         }
-        </div>
-
-        Contact Information:
-        <div style={{'marginBottom':'20px'}}>
-          510-604-4520
-          moshimo90696@gmail.com
-        </div>
-
-        Link to Github.
-        <div style={{'marginTop': '20px'}}>
-          {link}
         </div>
       </header>
     </div>

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #c1740071;
 }
 
 .App-logo {
@@ -20,7 +21,7 @@
   border-width: 10px;
   border-color: white;
   border-style: ridge;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   animation-name: lighter;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -50,7 +51,6 @@
 
 .App-header {
   background-color: #c1740071;
-  width:100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -62,6 +62,7 @@
 
 .App-link {
   color: #61dafb;
+  margin-top: 20px;
 }
 
 @keyframes App-logo-spin {

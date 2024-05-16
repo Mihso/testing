@@ -7,6 +7,9 @@
     display:flex;
     border-style: outset;
     }
+a{
+    text-decoration: none;
+}
     
 .NavOuter{
     margin: 0px 10px 0px 10px;
