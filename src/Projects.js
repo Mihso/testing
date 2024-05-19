@@ -42,6 +42,7 @@ function Projects() {
                 <td>A User management application that allows users to create teams, projects, and announcements for companies.</td>
                 <td>Angular, Springboot, Maven, CSS, TypeScript, Java, Postman, Git, Eclipse.</td>
                 <td><a href="https://github.com/Mihso/angular-group-final-jan-2024-green-team">Final Assessment</a></td>
+                <td><a href="https://mihso.github.io/angular-group-final-jan-2024-green-team/">Final deployed</a></td>
             </tr>
             <tr>
                 <td>Who's Who</td>
@@ -49,6 +50,13 @@ function Projects() {
                 <td>Angular, TypeScript,CSS, JPA, Postman, Springboot, Git, Eclipse, Maven</td>
                 <td><a href="https://github.com/Mihso/angular-whos-who-jan-2024-team-4">Whos's Who</a></td>
                 <td><a href="https://mihso.github.io/angular-whos-who-jan-2024-team-4/">Whos's Who deployed</a></td>
+            </tr>
+            <tr>
+                <td>Dev Duel</td>
+                <td>A game where Github profiles are compared</td>
+                <td>Angular, TypeScript,CSS, JPA, Postman, Springboot, Git, Eclipse, Maven</td>
+                <td><a href="https://github.com/Mihso/angular-dev-duel-Mihso">Dev Duel</a></td>
+                <td><a href="https://mihso.github.io/angular-dev-duel-Mihso/">Dev Duel deployed</a></td>
             </tr>
             <tr>
                 <td>Social Media</td>
