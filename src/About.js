@@ -39,9 +39,12 @@ function About() {
           moshimo90696@gmail.com
         </div>
 
-        Link to Github:
+        Links:
         <div>
-        <a href="https://github.com/Mihso">{link}</a>
+        <text>Github: </text><a href="https://github.com/Mihso">{link}</a>
+        </div>
+        <div>
+        <text>LinkedIn: </text><a href="https://www.linkedin.com/in/mihso-soap">Mihso</a>
         </div>
       </header>
     </div>

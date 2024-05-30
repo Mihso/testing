@@ -23,7 +23,7 @@ function Projects() {
     getData();
 
   return (
-    <div className="App">
+    <div className="Project-App">
     <div>
     <h1>Projects</h1>
     <table >
@@ -77,10 +77,11 @@ function Projects() {
                 <td><a href="https://github.com/Mihso/java-assignments-schema-design-Mihso">Schema Design</a></td>
             </tr>
             <tr>
-                <td>Yelp</td>
+                <td>Yoovies</td>
                 <td>A movie-review application made with a group of 4 others.</td>
                 <td>React, Django, JavaScript, Python, Bootstrap, CSS</td>
                 <td><a href="https://gitlab.com/yoovies/yelp-for-movies">Yoovies</a></td>
+                <td><a href="https://yoovies.gitlab.io/yelp-for-movies/">Yoovies</a></td>
             </tr>
         </tbody>
     </table>
