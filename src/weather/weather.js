@@ -29,18 +29,24 @@ function Weather() {
   return (
     <div className="Weather">
     <header className='Weather-header'>
-        <div>
+        <div style={{'fontSize': '40px', 'fontWeight': '400'}}>
             {title} 
         </div>
 
         <div className="gridder">
         {
-            periods.map((data, idx) => (
+            periods.map((data, idx) => {
+              
+              let lister = data.detailedForecast.split(".");
+              return (
                 <div className="entry" key={idx}>
-                <div style={{'marginBottom' : '15px'}}>{data.name}</div>
-                <div>{data.detailedForecast}</div>
+                <div style={{'marginBottom' : '15px', 'fontSize':'30px', 'fontWeight':'800'}}>{data.name}</div>
+                <div> <text> Forecast : </text>{lister[0]}</div>
+                <div><text> Temperature : </text>{lister[1]}</div>
+                <div><text> Winds : </text>{lister[2]}</div>
                 </div>
-              )
+              );
+            }
             )
         }
         </div>
