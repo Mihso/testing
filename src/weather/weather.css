@@ -3,6 +3,7 @@
     border-style: solid;
     border-color: black;
     font-size: 17px;
+    font-stretch: 100%;
     margin: 10px;
     padding: 10px;
     max-width: 300px;
@@ -10,6 +11,7 @@
     flex: auto;
     background-color: aquamarine;
     color: black;
+    overflow: auto;
 }
 
 .weather-text{
@@ -19,7 +21,7 @@
 
 .gridder{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, minmax(200px,1fr));
     grid-auto-rows: auto;
 }
 .Weather{
@@ -29,7 +31,6 @@
     padding: 10px;
     background-color: rgb(0, 27, 177);
     background-image: linear-gradient(rgb(0,27,177), rgb(0, 81, 255));
-    width:100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -37,4 +38,5 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    overflow: auto;
 }
