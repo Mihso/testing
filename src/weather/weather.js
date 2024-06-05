@@ -8,10 +8,10 @@ function Weather() {
     const [periods, updatePeriods] = useState([]);
     const [areas, updateAreas] = useState([]);
     const [url, updateURL] = useState("https://api.weather.gov/zones/forecast/ALZ015");
-    const [link, updateLink] = useState();
+    const [zone, updateZone] = useState('AL');
 
     async function getData() {
-        const api = "https://api.weather.gov/alerts/active?area=CA";
+        const api = `https://api.weather.gov/alerts/active?area=${zone}`;
         const weather = `${url}/forecast`;
         const areas = "https://api.weather.gov/zones/forecast/";
         const response = await fetch(api);
@@ -47,11 +47,17 @@ function Weather() {
         <div style={{'fontSize': '40px', 'fontWeight': '400'}}>
             {title} 
         </div>
-        <select value={url} onChange={e => updateURL(e.target.value)}>
+        <select value={url} onChange={(e) => {updateURL(e.target.value);
+          let urlSplit = e.target.value.split('/');
+          updateZone(urlSplit[5].substring(0,2));
+        }}>
         {
           areas.map((data, idx) => {
+
+            let urlSplit = data.split('/');
+            
             return(
-              <option value={data} key={idx}>{data}</option>
+              <option value={data} key={idx}>{urlSplit[5]}</option>
             );
           })
         }
