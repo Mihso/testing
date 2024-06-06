@@ -31,7 +31,7 @@ function Weather() {
         for(let l of areasData.features){
           if(counter == 0){
           listAreas.push(l.id);
-          counter = 200;
+          counter = 100;
           }
           counter-= 1;
         }
