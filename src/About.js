@@ -12,7 +12,6 @@ function About() {
         const api = "https://api.github.com/users/Mihso";
         const response = await fetch(api);
         const data = await response.json();
-        console.log(data);
         updateData(data.avatar_url);
         updateDescription(data.bio);
         updateLink(data.html_url);

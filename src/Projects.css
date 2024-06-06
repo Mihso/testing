@@ -36,6 +36,7 @@ tbody{
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    padding-bottom: 10px;
 }
 td{
     border-color: rgb(101, 101, 101);
