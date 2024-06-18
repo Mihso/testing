@@ -26,6 +26,7 @@ function Projects() {
     <div className="Project-App">
     <div>
     <h1>Projects</h1>
+    <div className="tabler">
     <table >
         <thead>
             <tr>
@@ -85,6 +86,7 @@ function Projects() {
             </tr>
         </tbody>
     </table>
+    </div>
     </div>
     </div>
   );

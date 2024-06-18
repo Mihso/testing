@@ -22,7 +22,7 @@ function About() {
   return (
     <div className="App">
     <header className="App-header" style={{'padding': '10px'}}>
-        <img src={url} style={{"margin" : '10px'}} className="profile-pict" alt="logo" />
+        <img src={url} style={{"margin" : '15px'}} className="profile-pict" alt="logo" />
         <div>
             About: 
         </div>
