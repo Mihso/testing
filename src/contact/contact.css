@@ -1,0 +1,26 @@
+.contact-app{
+    align-content: center;
+    margin: auto;
+    background-image: linear-gradient(0.25turn, orange, rgb(255, 102, 0));
+}
+
+.contact-head{
+    font-size: 50px;
+    margin: auto;
+    padding: 1%;
+}
+
+.contact-box{
+    border-color: rgb(159, 182, 182);
+    border-width: 10px;
+    border-style:groove;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form{
+    padding: 3%;
+    align-self: center;
+    justify-content: center;
+}
