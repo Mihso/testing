@@ -10,6 +10,7 @@ const Navbar = () =>{
                 {/* <NavLink to="/other"><div className="NavOuter"> <Butto name="Other"></Butto> </div></NavLink> */}
                 <NavLink to="/projects"><div className="NavOuter"> <Butto name="Projects"></Butto> </div></NavLink>
                 <NavLink to="/weather"><div className="NavOuter"> <Butto name="Weather"></Butto> </div></NavLink>
+                <NavLink to="/contact"><div className="NavOuter"> <Butto name="Contact"></Butto> </div></NavLink>
         </nav>
     );
 }

@@ -7,7 +7,7 @@
 }
 
 table {
-    border-color: rgb(166, 166, 166);
+    border-color: rgb(97, 97, 97);
     background-color: grey;
     background-image: linear-gradient(0.35turn, rgb(97, 97, 97), rgb(171, 171, 171));
     border-width:10px;
@@ -19,7 +19,7 @@ table {
 }
 thead{
     font-size: 30px; 
-    border-color: rgb(110, 110, 110);;
+    border-color: rgb(59, 59, 59);;
     border-width: 5px;
     border-style: solid;
     border-collapse: collapse;
@@ -27,7 +27,7 @@ thead{
 }
 tbody{
     font-size: 18px; 
-    border-color: rgb(129, 129, 129);
+    border-color: rgb(87, 87, 87);
     border-width: 5px;
     border-style: solid;
     border-collapse: collapse;
@@ -49,7 +49,7 @@ tbody{
     padding-bottom: 10px;
 }
 td{
-    border-color: rgb(101, 101, 101);
+    border-color: rgb(61, 61, 61);
     border-width: 2px;
     border-style: solid;
     font-size: 20px;

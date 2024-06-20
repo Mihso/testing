@@ -4,6 +4,7 @@ import Other from './other';
 import About from './About';
 import Weather from './weather/weather';
 import Projects from './Projects';
+import Contact from './contact/contact';
 import {Routes ,Route, NavLink } from 'react-router-dom';
 import Navbar from './Navbar/Navbar';
 
@@ -23,6 +24,7 @@ function App() {
       <Route path='/about' Component={About}/>
       <Route path='/projects' Component={Projects} />
       <Route path='/weather' Component={Weather} />
+      <Route path='/contact' Component={Contact} />
     </Routes>
     </div>
     </div>
