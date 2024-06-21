@@ -1,10 +1,11 @@
 import "./sidebar.css";
 
-function Sidebar(){
+const Sidebar = props => {
+    const message = props.children;
     return(
         <div className="sidebar">
-            <div>hi</div>
-            <div>jello</div>
+            <div>{message}</div>
+            <div></div>
         </div>
     );
 }
