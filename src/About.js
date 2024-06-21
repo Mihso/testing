@@ -29,22 +29,6 @@ function About() {
         <div className='about' style={{'margin': "10px"}}>
         I am a full-stack software engineer with a thorough education, including a bachelor’s degree in Cinema and Digital Media from the University of California Davis, and certificates from both the Hack Reactor Immersive program and the Cook Systems FastTrack program. I have deep insight into user accessibility and I ensure the success of fellow engineers by guiding them through the debugging process. I enjoy building comprehensible code, displayed in my work on a movie review application that allows users to view information on the latest movies and write reviews. I also possess exceptional analytical and problem-solving skills that stem from strong pattern-recognition capabilities, making me a valuable team member.
         </div>
-
-        Contact Information:
-        <div style={{'marginBottom':'20px'}}>
-          <div>
-          510-604-4520
-          </div>
-          moshimo90696@gmail.com
-        </div>
-
-        Links:
-        <div>
-        <text>Github: </text><a href="https://github.com/Mihso">{link}</a>
-        </div>
-        <div>
-        <text>LinkedIn: </text><a href="https://www.linkedin.com/in/mihso-soap">Mihso</a>
-        </div>
       </header>
     </div>
   );
