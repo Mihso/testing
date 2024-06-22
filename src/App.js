@@ -13,11 +13,11 @@ function App() {
   return (
     <div>
     <Navbar />
-    <div style={{'borderStyle':'inset', 'borderColor':'black', 'borderWidth': '15px'}}>
-      <div style={{'borderStyle':'solid', 'borderColor':'#58350071','backgroundColor':'#623b0071', 'borderWidth': '15px'}}>
-      <div style={{'borderStyle':'inset', 'borderColor':'black', 'borderWidth': '10px'}}>
-      <div style={{'borderStyle':'solid', 'borderColor':'#623b0071','backgroundColor': '#623b0071' , 'borderWidth': '15px'}}>
-      <div style={{'borderStyle':'inset', 'borderColor':'black', 'borderWidth': '15px'}}>
+    <div className="borderer" style={{'borderStyle':'inset', 'borderColor':'black'}}>
+      <div className="borderer" style={{'borderStyle':'solid', 'borderColor':'#58350071','backgroundColor':'#623b0071'}}>
+      <div className="borderer" style={{'borderStyle':'inset', 'borderColor':'black'}}>
+      <div className="borderer" style={{'borderStyle':'solid', 'borderColor':'#623b0071','backgroundColor': '#623b0071'}}>
+      <div className="borderer" style={{'borderStyle':'inset', 'borderColor':'black'}}>
     <Routes>
       <Route path='/testing' Component={Home} />
       <Route path='/other' Component={Other} />

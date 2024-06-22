@@ -1,12 +1,29 @@
-.NavStyle{
-    padding: 10px;
-    background: rgb(71, 71, 71);
-    min-height: 40px;
-    padding: 10px;
-    align-content: center;
-    display:flex;
-    border-style: outset;
-    }
+
+@media screen and (max-width: 700px){
+    .NavStyle{
+        padding: 10px;
+        background: rgb(71, 71, 71);
+        min-height: 40px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-content: center;
+        border-style: outset;
+        }
+}
+
+@media screen and (min-width: 700px){
+    .NavStyle{
+        padding: 10px;
+        background: rgb(71, 71, 71);
+        min-height: 40px;
+        padding: 10px;
+        align-content: center;
+        display:flex;
+        border-style: outset;
+        }
+}
+
 a{
     text-decoration: none;
 }
