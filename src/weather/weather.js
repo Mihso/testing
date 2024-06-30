@@ -7,10 +7,28 @@ function Weather() {
     const [title, updateTitle] = useState("Nothing could be retrieved");
     const [periods, updatePeriods] = useState([]);
     const [areas, updateAreas] = useState([]);
-    const [url, updateURL] = useState("https://api.weather.gov/zones/forecast/ALZ015");
+    const [loading, updateLoading] = useState(true);
+    const [url, updateURL] = useState("");
 
-    async function getData() {
-        const areasW = "https://api.weather.gov/zones/forecast/";
+    async function start(){
+      const areasW = "https://api.weather.gov/zones/forecast/";
+      const areasResponse = await fetch(areasW);
+      const areasData  = await areasResponse.json();
+      let listAreas = [];
+
+      let counter = 100;
+
+      for(let l of areasData.features){
+        if(counter == 0){
+        listAreas.push(l.id);
+        counter = 100;
+        }
+        counter-= 1;
+      }
+      updateAreas(listAreas);
+    }
+
+    async function getData(url) {
         const weather = `${url}/forecast`;
         const zoneInfo = url;
         const zoneResponse = await fetch(zoneInfo);
@@ -20,35 +38,27 @@ function Weather() {
         const api = `https://api.weather.gov/alerts/active?area=${zoneData.properties.state}`;
         const response = await fetch(api);
         const weatherResponse = await fetch(weather);
-        const areasResponse = await fetch(areasW);
         const data = await response.json();
         const weatherData = await weatherResponse.json();
-        const areasData  = await areasResponse.json();
-        let listAreas = [];
-
-        let counter = 100;
-
-        for(let l of areasData.features){
-          if(counter == 0){
-          listAreas.push(l.id);
-          counter = 100;
-          }
-          counter-= 1;
-        }
-        updateAreas(listAreas);
         updateTitle(data.title);
         updatePeriods(weatherData.properties.periods);
-        // updateData(data.);
-        // updateDescription(data.bio);
-        // updateLink(data.html_url);
       }
       else{
-        updateTitle("Forecast information for this area not found.")
+        updateTitle("Forecast information for this area not found.");
         updatePeriods([]);
       }
+
+      updateLoading(false);
     }
     
-    getData();
+    start();
+
+  function handleChange(event){
+    updateURL(event.target.value);
+    updateLoading(true);
+    updateTitle("Forecast information for this are is loading.");
+    getData(event.target.value);
+  }
 
   return (
     <div className="Weather">
@@ -56,8 +66,8 @@ function Weather() {
         <div style={{'fontSize': '40px', 'fontWeight': '400', 'marginBottom':'10px'}}>
             {title} 
         </div>
-        <select className="weather-selection" value={url} onChange={(e) => {updateURL(e.target.value);
-        }}>
+        <select className="weather-selection" value={url} onChange={(e) => {handleChange(e)}}>
+          <option value="">Select an area.</option>
         {
           areas.map((data, idx) => {
 
@@ -69,6 +79,7 @@ function Weather() {
           })
         }
       </select>
+      {!loading ? (
         <div className="gridder">
         {
             periods.map((data, idx) => {
@@ -86,6 +97,7 @@ function Weather() {
             )
         }
         </div>
+      ): <div>loading...</div>}
       </header>
     </div>
   );
