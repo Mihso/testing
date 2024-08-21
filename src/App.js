@@ -18,13 +18,15 @@ function App() {
       <div className="borderer" style={{'borderStyle':'inset', 'borderColor':'black'}}>
       <div className="borderer" style={{'borderStyle':'solid', 'borderColor':'#623b0071','backgroundColor': '#623b0071'}}>
       <div className="borderer" style={{'borderStyle':'inset', 'borderColor':'black'}}>
-    <Routes path='/testing'>
-      <Route path='' Component={Home} />
-      <Route path='/other' Component={Other} />
-      <Route path='/about' Component={About}/>
-      <Route path='/projects' Component={Projects} />
-      <Route path='/weather' Component={Weather} />
-      <Route path='/contact' Component={Contact} />
+    <Routes>
+      <Route path='/testing'>
+        <Route path='' Component={Home} />
+        <Route path='/testing/other' Component={Other} />
+        <Route path='/testing/about' Component={About}/>
+        <Route path='/testing/projects' Component={Projects} />
+        <Route path='/testing/weather' Component={Weather} />
+        <Route path='/testing/contact' Component={Contact} />
+      </Route>
     </Routes>
     </div>
     </div>
