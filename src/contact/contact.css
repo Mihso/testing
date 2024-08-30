@@ -37,7 +37,7 @@
 
 .contact-form{
     margin: auto;
-    font-size: 20px;
+    font-size: 25px;
     padding: 3%;
     align-self: center;
     justify-content: center;
@@ -53,6 +53,6 @@
 
 .other-contact{
     margin:auto;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
 }

@@ -10,6 +10,15 @@
         align-content: center;
         border-style: outset;
         }
+
+    .NavOuter{
+        margin: 10px 10px 10px 10px;
+        border-style:inset;
+        border-width: 7px;
+        border-color: black;
+        border-radius: 10px;
+        max-width: fit-content;
+    }
 }
 
 @media screen and (min-width: 700px){
@@ -17,23 +26,22 @@
         padding: 10px;
         background: rgb(71, 71, 71);
         min-height: 40px;
-        padding: 10px;
         align-content: center;
         display:flex;
         border-style: outset;
+        }
+
+        .NavOuter{
+            margin: 0px 10px 0px 10px;
+            border-style:inset;
+            border-width: 7px;
+            border-color: black;
+            border-radius: 10px;
+            max-width: fit-content;
         }
 }
 
 a{
     text-decoration: none;
-}
-    
-.NavOuter{
-    margin: 0px 10px 0px 10px;
-    border-style:inset;
-    border-width: 7px;
-    border-color: black;
-    border-radius: 10px;
-    max-width: fit-content;
 }
     
