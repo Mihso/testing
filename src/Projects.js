@@ -1,25 +1,6 @@
 import './Projects.css';
-import { useState } from 'react';
 
 function Projects() {
-
-    const [items, updateItems]= useState([
-        ["pizz","pie"], 
-        ["pasta","sauce"]
-      ]);
-    const [title, updateTitle] = useState();
-    const [description, updateDescription] = useState();
-    const [url, updateData] = useState();
-
-    async function getData() {
-        const api = "https://api.github.com/users/Mihso";
-        const response = await fetch(api);
-        const data = await response.json();
-        updateData(data.avatar_url);
-        updateDescription(data.bio);
-    }
-    
-    getData();
 
   return (
     <div className="Project-App">
@@ -47,7 +28,7 @@ function Projects() {
             <tr>
                 <td>Who's Who</td>
                 <td>A Music guessing game pulling tracks from Spotify.</td>
-                <td>Angular, TypeScript,CSS, JPA, Postman, Springboot, Git, Eclipse, Maven</td>
+                <td>Angular, TypeScript,CSS, JPA, Postman, Springboot, Git, Eclipse, Maven, NodeJS</td>
                 <td><a href="https://github.com/Mihso/angular-whos-who-jan-2024-team-4">Whos's Who</a></td>
                 <td><a href="https://mihso.github.io/angular-whos-who-jan-2024-team-4/">Whos's Who deployed</a></td>
             </tr>
@@ -79,7 +60,7 @@ function Projects() {
             <tr>
                 <td>Yoovies</td>
                 <td>A movie-review application made with a group of 4 others.</td>
-                <td>React, Django, JavaScript, Python, Bootstrap, CSS</td>
+                <td>React, Django, JavaScript, Python, Bootstrap, CSS, Gitlab, Heroku, Docker</td>
                 <td><a href="https://gitlab.com/yoovies/yelp-for-movies">Yoovies</a></td>
                 <td><a href="https://yoovies.gitlab.io/yelp-for-movies/">Yoovies</a></td>
             </tr>

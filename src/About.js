@@ -3,18 +3,13 @@ import { useState } from 'react';
 
 function About() {
 
-    const [title, updateTitle] = useState();
-    const [description, updateDescription] = useState();
     const [url, updateData] = useState();
-    const [link, updateLink] = useState();
 
     async function getData() {
         const api = "https://api.github.com/users/Mihso";
         const response = await fetch(api);
         const data = await response.json();
         updateData(data.avatar_url);
-        updateDescription(data.bio);
-        updateLink(data.html_url);
     }
     
     getData();
