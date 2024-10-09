@@ -42,7 +42,10 @@ const [message, updateMessage] = useState("");
   return (
     <div className='contact-app'>
 
-    <h1 className="contact-head">Contact</h1>
+    <h1 className="contact-head">
+      <div style={{'margin': 'auto', 'width':'150px' }} className='titlestyler'>Contact</div>
+    </h1>
+    <div className='contact-body'>
     <form className="contact-form" ref={form} onSubmit={sendEmail}>
     Name:
     <br></br>
@@ -59,7 +62,6 @@ const [message, updateMessage] = useState("");
     <input className="buttoner" type="submit" value="Send" />
     <input className="buttoner" type="reset" value="Reset"/>
     </form>
-
     <div className="other-contact">
         <div style={{'marginBottom':'20px'}}>
           <div>
@@ -76,6 +78,7 @@ const [message, updateMessage] = useState("");
         <text>LinkedIn: </text><a href="https://www.linkedin.com/in/mihso-soap">Mihso</a>
         </div>
         {open()}
+    </div>
     </div>
     </div>
   );

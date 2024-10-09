@@ -16,7 +16,9 @@ function Home() {
     <div className="App">
     <header className="App-header">
       <div style={{'fontSize':"60px"}}>
-        MATTHEW OSHIMO PORTFOLIO
+        <div className="titlestyler">
+          MATTHEW OSHIMO PORTFOLIO
+        </div>
       </div>
         {/* <form className='form'>
           <label>Name: </label>

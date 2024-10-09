@@ -1,29 +1,34 @@
 
 
 @media screen and (min-width:700px){
-    .contact-app{
+    .contact-body{
         align-content: center;
         margin: auto;
-        background-image: linear-gradient(0.25turn, orange, rgb(255, 102, 0));
         display:grid;
         grid-template-columns: auto auto;
     }
 }
 
 @media screen and (max-width:700px){
-    .contact-app{
+    .contact-body{
         align-content: center;
         margin: auto;
-        background-image: linear-gradient(0.25turn, orange, rgb(255, 102, 0));
         display:grid;
         grid-template-columns: auto;
     }
 }
 
+.contact-app{
+    background-image: linear-gradient(0.25turn, orange, rgb(255, 102, 0));
+    margin: auto;
+    align-content: center;
+}
+
 .contact-head{
-    font-size: 50px;
+    font-size: 40px;
     margin: auto;
     padding: 1%;
+    color: white;
 }
 
 .contact-box{

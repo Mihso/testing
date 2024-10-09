@@ -123,3 +123,11 @@
   padding: 10px;
   margin: 10px;
 }
+
+.titlestyler{
+  background-color: rgb(117, 106, 84);
+  border-radius: 10px;
+  padding: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}

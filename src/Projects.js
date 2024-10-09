@@ -5,7 +5,9 @@ function Projects() {
   return (
     <div className="Project-App">
     <div>
-    <h1>Projects</h1>
+    <h1>
+        <div style={{'width': '50%', 'margin': 'auto'}} className ="titlestyler" >Projects</div>
+    </h1>
     <div className="tabler">
     <table >
         <thead>
